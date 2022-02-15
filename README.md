@@ -26,3 +26,5 @@
 - Support multiple replicas more flexibly
 - Support monitoring and automatic failover.
 - Support tuning the trade-off between writing performance and data persistence safety.
+- Replication only works for MySQL 8.
+- Better support of replication across internet.
