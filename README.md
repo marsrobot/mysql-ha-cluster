@@ -20,7 +20,7 @@
 - On master: Wait for master_start.sh finishing before running ./replica_start.sh at deployment/docker/m1r1-r0
 - On replica: at deployment/docker/m1r1-r0, run replica_start.sh
 - On master: After replica_start.sh finished, run master_data_create.sh
-- Finally, when you modify databases on the master instance, data will be replicated to the replicas.
+- Finally, when you modify databases on the master instance, data will be fully replicated to the replicas.
 
 # Enhancements
 - Support multiple replicas more flexibly
