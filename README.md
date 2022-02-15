@@ -6,7 +6,7 @@
 # Features
 - A master instance can replicate to one or multiple replicas.
 - There is no replication between master instances.
-- If the data is sharded on master instances, this will provide a scalable and safe SQL storage solution.
+- If the data is sharded on multiple master instances, this provides a scalable and safe MySQL storage solution.
 - The topology is encoded as m1rn, which means 1 master and n replicas for each master.
 - Multiple replicas can be added relatively easily.
 
