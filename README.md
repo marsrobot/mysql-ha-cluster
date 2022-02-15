@@ -30,4 +30,4 @@
 - Better support of replication across internet.
 
 # Minor fixes
-- Needing to switch the mysql client to be based on Docker for easier usage.
+- Needing to switch the MySQL client to be based on Docker for easier usage.
