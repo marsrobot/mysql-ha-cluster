@@ -1,0 +1,1 @@
+sudo ufw allow from any to any port 3306

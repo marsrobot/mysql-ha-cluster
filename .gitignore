@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+.vscode/
+.settings/
+.vs/
+node_modules/
+vgcore.*
+venv/
+
+.aws/
+
+*.pyc
+
+*.GENERATED.sql
+*.GENERATED.sh
+*.GENERATED.cnf
+.env

@@ -1,0 +1,24 @@
+# /etc/mysql/mysql.conf.d/mysqld.cnf
+
+#
+# The MySQL  Server configuration file.
+#
+# For explanations see
+# http://dev.mysql.com/doc/mysql/en/server-system-variables.html
+
+[mysqld]
+pid-file            = /var/run/mysqld/mysqld.pid
+socket              = /var/run/mysqld/mysqld.sock
+datadir             = /var/lib/mysql
+secure-file-priv    = NULL
+log-error	        = /var/log/mysql/error.log
+bind-address        = {{TEMPLATE_BIND_ADDRESS}}
+server-id           = {{TEMPLATE_SERVER_ID}}
+log_bin             = /var/log/mysql/binlog.log
+# binlog_do_db        = marketdata
+# binlog_do_db        = website
+binlog_ignore_db    = information_schema
+binlog_ignore_db    = mysql
+binlog_ignore_db    = performance_schema
+binlog_ignore_db    = sys
+relay-log           = /var/log/mysql/mysql-relay-bin.log

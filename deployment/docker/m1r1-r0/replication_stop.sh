@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. ../m1r1_site.sh
+
+BIND_ADDRESS_REPLICA=${TEMPLATE_BIND_ADDRESS_REPLICA_0}
+
+echo "BIND_ADDRESS_REPLICA:" $BIND_ADDRESS_REPLICA
+
+mysql --user=root --password=${PASSWORD} -h $BIND_ADDRESS_REPLICA -e "STOP REPLICA"
+mysql --user=root --password=${PASSWORD} -h $BIND_ADDRESS_REPLICA -e "RESET SLAVE"
