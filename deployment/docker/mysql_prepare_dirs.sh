@@ -31,9 +31,6 @@ sudo chmod -R 777 ${DATA_DIR}/var/log/mysql
 
 sudo docker pull mysql:8.0.27
 
-# enable password authentication for root
-# https://stackoverflow.com/questions/49019652/not-able-to-connect-to-mysql-docker-from-local
-
 echo "Listing ${DATA_DIR}/var/lib/mysql ..."
 sudo /bin/ls -la ${DATA_DIR}/var/lib/mysql
 

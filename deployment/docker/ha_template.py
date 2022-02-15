@@ -8,7 +8,6 @@ class ha_template:
     def main(input_file_path: str,
              output_file_path: str,
              dict_parameters: dict):
-        # print(locals())
 
         print('Input template file: {}'.format(input_file_path))
 
@@ -49,8 +48,6 @@ if __name__ == '__main__':
     dict_parameters = dict()
     for key in keys:
         dict_parameters[key] = getattr(args, key)
-
-    print(dict_parameters)
 
     ha_template.main(input_file_path=infile,
                      output_file_path=outfile,

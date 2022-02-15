@@ -52,4 +52,4 @@ if __name__ == '__main__':
 
     file_path = '/tmp/backup_all.sql'
 
-    replicate_util.query(task=task, file_path=file_path, server=server, port=port, user=user, password=${PASSWORD})
+    replicate_util.query(task=task, file_path=file_path, server=server, port=port, user=user, password=password)

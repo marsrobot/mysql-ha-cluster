@@ -28,3 +28,6 @@
 - Support tuning the trade-off between writing performance and data persistence safety.
 - Replication only works for MySQL 8.
 - Better support of replication across internet.
+
+# Minor fixes
+- Needing to switch the mysql client to be based on Docker for easier usage.
